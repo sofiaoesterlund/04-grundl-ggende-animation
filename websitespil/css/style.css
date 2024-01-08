@@ -1,0 +1,361 @@
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: red;
+  overflow: hidden;
+}
+
+#game {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(67, 45, 11);
+}
+
+#game_background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(134, 92, 40);
+  background-image: url(../img/baggrund.svg);
+  background-size: cover;
+}
+#game_elements {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+/* Spilelementer og mellemgrund */
+/* Husk både container og sprite til de elementer du skal klikke på */
+
+#figur_container {
+  position: absolute;
+  width: 30%;
+  aspect-ratio: 7/7;
+  top: 40%;
+  left: -2%;
+}
+
+#figurglad_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/FIGUR\ GLAD.svg);
+  background-size: cover;
+}
+
+#kaffe1_container {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 1/1;
+  top: -60%;
+  left: 25%;
+}
+
+#kaffe1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/KAFFE\ 1.svg);
+  background-size: cover;
+}
+
+#kaffe2_container {
+  position: absolute;
+  width: 12%;
+  aspect-ratio: 3/4;
+  top: -90%;
+  left: 80%;
+}
+
+#kaffe2_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/KAFFE\ 2.svg);
+  background-size: cover;
+}
+
+#kaffe3_container {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 1/1;
+  top: -60%;
+  left: 50%;
+}
+
+#kaffe3_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/KAFFE\ 3.svg);
+  background-size: cover;
+}
+
+#cola_container {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 1/1;
+  top: -40%;
+  left: 65%;
+}
+
+#cola_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/COLA.svg);
+  background-size: cover;
+}
+
+#maelk_container {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 1/1;
+  top: -30%;
+  left: 40%;
+}
+
+#maelk_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/MÆLK.svg);
+  background-size: cover;
+}
+
+#juice_container {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 1/1;
+  top: -90%;
+  left: 40%;
+}
+
+#juice_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/JUICE.svg);
+  background-size: cover;
+}
+
+#mellemgrund {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mellemgrund.svg);
+  background-size: cover;
+}
+
+/*#game_foreground {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/FIGUR\ GLAD.svg);
+  background-size: 100%;
+}
+
+/* UI elementer */
+
+#game_ui {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#heart1,
+#heart2,
+#heart3 {
+  position: absolute;
+  width: 8%;
+  aspect-ratio: 1/1;
+  background-image: url(../img/kaffeliv.svg);
+  background-size: cover;
+  top: -80;
+  left: 4%;
+}
+#heart2 {
+  top: 10%;
+  left: 4%;
+}
+#heart3 {
+  top: 20%;
+  left: 4%;
+}
+
+#time_board {
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+  width: 3vw;
+  height: 20vw;
+  border: 2px solid white;
+  
+}
+
+#time_sprite{
+width: 3vw;
+height: 20vw;
+top: 1vw;
+left: 95vw;
+transform-origin: top bottom;
+background-color: #6b6533c3;
+}
+
+
+#score_board {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: -2%;
+  left: 95%;
+  width: 28%;
+  aspect-ratio: 8/3;
+  background-image: url(../img/ui_points.svg);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#mine_points {
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: #564514;
+}
+
+/* Start- og slutskærme */
+/* Brug evt. inspektoren til at se dem ved at fjerne display:none */
+
+#startGame {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/startside.svg);
+  background-size: cover;
+  background-color: white;
+}
+
+#startknap {
+  position: absolute;
+  width: 20%;
+  left: 20%;
+  top: 50%;
+  aspect-ratio: 303/125;
+  background-image: url(../img/START.svg);
+
+}
+
+
+#game_over {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/gameover.svg);
+  background-size: cover;
+  background-color: white;
+}
+
+#level_complete {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/levelcomplete.svg);
+  background-size: cover;
+  background-color: white;
+}
+
+#play_again_1 {
+  position: absolute;
+  width: 18%;
+  aspect-ratio: 7/8;
+  top: -80%;
+  left: 40%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/TRYAGAIN.svg);
+  background-size: cover;
+}
+#play_again_2 {
+  position: absolute;
+  width: 18%;
+  aspect-ratio: 7/8;
+  top: -80%;
+  left: 40%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/TRYAGAIN.svg);
+  background-size: cover;
+}
+
+
+/* falde animation */ 
+
+.fald{
+  animation: fald 5s infinite linear;
+} 
+
+@keyframes fald {
+  from{
+    translate: -20% -0;
+  }
+  to{
+    translate: 0 700%;
+  }
+}
+
+.forsvind {
+  animation: forsvind 2s 1 both;
+}
+
+@keyframes forsvind {
+  from{
+    opacity: 1;
+    rotate: 0deg;
+    scale: 1;
+  }
+  to{
+    opacity: 0;
+    rotate: 720deg;
+    scale: 0;
+  }
+}
+
+.shrink {
+  animation-name: shrink_kf;
+  animation-duration: 30s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shrink_kf {
+  0%{
+    scale: 1-1;
+    background-color: #6b6533b6;
+  }
+  50%{
+    background-color: rgba(255, 166, 0, 0.711);
+  }
+  100%{
+    scale: 1 0;
+    background-color: rgba(255, 0, 0, 0.633);
+  }
+}

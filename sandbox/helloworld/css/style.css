@@ -1,0 +1,21 @@
+#box {
+    width: 20%;
+    aspect-ratio: 1/1;
+    background-color: brown;
+}
+
+.border{
+    border: 3px black dashed;
+}
+
+.fall{
+    animation: falling 4s infinite;
+}
+.pause{
+    animation-play-state: paused;
+}
+
+@keyframes falling{
+    from {translate: 0 0;}
+    to {transform: 0 500%;}
+}
